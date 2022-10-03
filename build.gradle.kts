@@ -1,7 +1,3 @@
-plugins {
-    id("org.gradle.hello-world") version "0.2"
-}
+import gradle.demo.addJump
 
-allprojects {
-    apply(plugin = "org.gradle.hello-world")
-}
+addJump()

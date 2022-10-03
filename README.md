@@ -2,14 +2,10 @@
 Demo for Gradle knowledge sharing
 
 ```bash
-./gradlew helloWorld
+./gradlew jump
+gradle-demo jump
+dog jump
 
-> Task :helloWorld
-Hello World!
-
-> Task :cat:helloWorld
-Hello World!
-
-> Task :dog:helloWorld
-Hello World!
+./gradlew fly
+cat fly
 ```
