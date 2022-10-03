@@ -1,7 +1,16 @@
-tasks.register("eat") {
-    println("root eat")
+allprojects {
+    tasks.register("allprojectsTask") {
+        println("${project.name} allprojectsTask")
+    }
+}
+subprojects {
+    tasks.register("subprojectsTask") {
+        println("${project.name} subprojectsTask")
+    }
 }
 
-tasks.register("sleep") {
-    println("root sleep")
+gradle.rootProject {
+    tasks.register("rootProjectTask") {
+        println("${project.name} rootProjectTask")
+    }
 }
