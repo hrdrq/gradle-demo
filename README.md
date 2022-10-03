@@ -2,33 +2,14 @@
 Demo for Gradle knowledge sharing
 
 ```bash
-./gradlew eat      
-root eat
-dog eat
+./gradlew helloWorld
 
-./gradlew sleep
-root sleep
-cat sleep
+> Task :helloWorld
+Hello World!
 
-./gradlew dog:eat
-dog eat
+> Task :cat:helloWorld
+Hello World!
 
-./gradlew cat:eat
-FAILURE: Build failed with an exception.
-* What went wrong:
-Task 'eat' not found in project ':cat'.
-
-./gradlew dog:sleep
-FAILURE: Build failed with an exception.
-* What went wrong:
-Task 'sleep' not found in project ':dog'.
-
-./gradlew cat:sleep
-cat sleep
-
-./gradlew :eat     
-root eat
-
-./gradlew :sleep   
-root sleep
+> Task :dog:helloWorld
+Hello World!
 ```
