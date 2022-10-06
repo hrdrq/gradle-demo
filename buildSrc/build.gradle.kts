@@ -4,14 +4,6 @@ plugins {
 
 repositories {
     mavenCentral()
-    maven("https://plugins.gradle.org/m2/")
-    maven {
-        credentials {
-            username = "${project.properties["mavenUsername"]}"
-            password = "${project.properties["mavenPassword"]}"
-        }
-        url = uri("http://nexus.smartnews.be/nexus/content/repositories/smartnews")
-    }
 }
 
 dependencies {
